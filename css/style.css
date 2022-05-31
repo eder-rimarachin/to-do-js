@@ -1,0 +1,116 @@
+:root {
+    --orange: #d95550;
+    --lightOrange: #dd6662;
+    --veryLightOrange: #f89e8b;
+    --gray: #55557b;
+    --white: #fff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: var(--orange);
+    /* text-align: center; */
+}
+#profile{
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
+}
+.profile {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin-top: 20px;
+}
+
+
+h1 {
+    font-size: 50px;
+    color: var(--white);
+    margin: 20px 0;
+    text-align: center; 
+}
+
+form {
+    /* border: 1px solid; */
+    width: 400px;
+    margin: 45px auto;
+    display: flex;
+}
+
+form input[type="text"] {
+    width: 85%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    border-style: none;
+    background-color: var(--veryLightOrange);
+    color: var(--white);
+}
+
+form input[type="text"]::placeholder {
+    color: var(--white);
+}
+
+form input[type="text"]:focus {
+    outline: none;
+}
+
+form input[type="submit"] {
+    width: 15%;
+    background-color: var(--orange);
+    border: unset;
+    background-image: url('../img/plus.png');
+    background-size: cover;
+    margin: 5px 10px;
+    width: 35px;
+    height: 35px;
+}
+
+form input[type="submit"]:hover {
+    cursor: pointer;
+}
+
+.list-container {
+    width: 400px;
+    margin: 0 auto;
+}
+
+.task-container {
+    background-color: var(--white);
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 6px;
+    padding: 16px;
+    border-radius: 5px;
+    font-size: 1.1em;
+    font-weight: 500;
+    color: var(--gray);
+}
+
+
+.btnClose{
+    width: 30px;
+    height: 30px;
+    padding: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+    float: right;
+}
+
+.btnClose:hover{
+    cursor: pointer;
+}
+
+#stats{
+    margin-top: 25px;
+    font-size: 1em;
+    text-align: center; 
+}
+
